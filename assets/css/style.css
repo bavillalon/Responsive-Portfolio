@@ -1,0 +1,185 @@
+/*using the sticky footer. need to make body the full height of the window.
+this will allow fo rthe sticky footer to stay at the bottom of the window or the content whichever is last*/
+html, body{
+    background-image: url(../images/concrete-texture.png);
+    height: 100%;
+}
+
+/*wrapper for sticky footer. allows for the footer to land at the bottom of the wrapper.*/
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
+  }
+  
+/*container to make the header content (top nav and name) remain in the content area of 960 px wide and centered while the rest goes to the full width of the window*/
+.header_container{
+    position: relative;/*need this to allow content to be positioned*/
+    background: #ffffff;
+    margin: 0 auto; /*0 auto will allow the content to center in window*/
+    width:960px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    box-sizing: border-box;
+}
+
+/*the header will contain the header_container. the header will go to the edge of the window while the content will be 960 and centered*/
+header{
+    width:100%;
+    background-color: #ffffff;
+    border-style:solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: #cccccc;
+
+}
+
+/*container to constrain the size of content and styles. border box is used to make the padding and content stay within the constraints*/
+.container{
+    position: relative;
+    background: #ffffff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 2px #dddddd solid;
+    width:960px;
+    padding:10px 10px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+/*used to make the h1 stuff look like I want it. need inline to make it go left. the margins are set to 0 to go to the edge*/
+.heading_teal_back{
+    display:inline-block;
+    margin: 0 0;
+    padding: 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background: #4aaaa5;
+    text-align: center;
+
+}
+
+/*h2 heaging needs a different style. border set to make it look nice*/
+.heading_teal_text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#4aaaa5;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    border-color: #dddddd;
+    padding: 0 0 15px 0;
+}
+
+/*top nav area set to position absolutely within the heading area but on teh top right.*/
+.topnav{
+    display: inline;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    text-decoration: none;
+    color: #777777;
+}
+
+/*used this to allow padding for each of the lineitems in the navbar*/
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+    color: #777777;
+    padding: 0 10px;
+    display: inline;
+}
+
+/*attribute tags are stupid.*/
+a{
+    text-decoration: none;
+    color: #777777;
+}
+
+li a:hover{
+    color:white;
+    background-color: #4aaaa5;
+}
+
+/*images will float to the left and remain inline with any content*/
+img {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: 0 15px 15px 0;
+}
+
+/*used this to make a container to make a relative position anchor for the portfolio module texts. 
+allows the text description of the image links to float in the middle of the image.*/
+div.float_container{
+    display: inline-block;
+    position:relative;
+}
+
+/*text to look liek heading area but slightly different. needs to float in the image.*/
+a.portfolio_text{
+    width: 300px;
+    padding: 15px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background: #4aaaa5;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left:0;
+
+}
+
+/*made this just in case I needed to resize the images differently. probably don't need it*/
+.portfolio_img {
+    width: 300px;
+    height: auto;
+}
+
+/*input area to look like therest of the pages*/
+input{
+    width: 100%;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+
+
+textarea{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 1px;
+}
+
+input[type=submit] {
+    width: initial;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+
+.push {
+    height: 50px;
+}
+
+  
+footer{
+    width:100%;
+    height: 50px;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    
+}
+
+.stick_foot{
+    text-align: center;
+    margin: 0 auto;
+    width:960px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #ffffff;
+
+}

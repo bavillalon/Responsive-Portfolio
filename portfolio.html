@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bryan Villalon Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    </head>
+
+    <!--top of the body has a wrapper used to make the whole height 100% for the sticky footer-->
+    <body>
+        <div class="wrapper">
+            <!--here I'm using a header container to bring in the full size of the window to 960 px. the header width will go to the full width of the window
+            The h1 tag has it's own class to allow it to be inline and remove the margins to take up the specified height and width
+            the ul for top nav is contained to allow for the individual entries to have padding. in the css the link attributes are specified-->
+                <header>
+                        <div class="header_container">
+                            <h1 class="heading_teal_back">Bryan Villalon</h1>
+                            <div class=topnav>
+                                <ul>
+                                    <li><a href="index.html">About Me</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                </header>
+
+            <!--entire content is contained to make a reference to place items. the h2 tag has its own class to allow for control the rest is just about me-->
+            <div class="container">
+                <h2 class="heading_teal_text">Portfolio</h2>
+                
+                <!--each portfolio entry is floating to automatically fill in bellow in the content area hence each one having it's own container.
+                also created the container to create a position relative for the text. in order you'll see the about me, game from prework, and my ee experience at HPE as well as a placeholder to indicate more to come
+            -->
+                <div class="float_container">
+                    <a href="index.html">
+                        <img src="assets/images/BryanV_picture.jpg.jpg" class="portfolio_img" alt="Picture or Bryan">
+                    </a>
+                    <a href="index.html" class="portfolio_text">About Me</a>
+                </div>
+
+                <div class="float_container">
+                        <a href="https://scratch.mit.edu/projects/316176722/">
+                            <img src="assets/images/placeholder_scratch_game.jpg" class="portfolio_img" alt="Picture to represent game">
+                        </a>
+                        <a href="https://scratch.mit.edu/projects/316176722/" class="portfolio_text">Scratch Game</a>
+                </div>
+
+                <div class="float_container">
+                        <a href="https://www.hpe.com/us/en/servers/networking.html">
+                            <img src="assets/images/ee_portfolio.jpg" class="portfolio_img" alt="picture to show electrical engineering experience at HPE">
+                        </a>
+                        <a href="https://www.hpe.com/us/en/servers/networking.html" class="portfolio_text">HPE</a>
+                </div>
+
+                <div class="float_container">
+                        <a href="#">
+                            <img src="assets/images/portfolio_placeholder.png" class="portfolio_img" alt="blank image as background for placeholder">
+                        </a>
+                        <a href="#" class="portfolio_text">More to Come!</a>
+                </div>
+            </div>
+            <!--push up for sticky footer-->
+            <div class="push"> </div>
+        </div>
+<!--footer to stay at bottom of content or window whichever is last-->
+        <footer>
+            <div class="stick_foot">
+                Copyright &copy;
+            </div>
+        </footer>
+
+    </body>
+</html>

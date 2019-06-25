@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Bryan Villalon</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    </head>
+
+        <!--top of the body has a wrapper used to make the whole height 100% for the sticky footer-->
+    <body>
+        <div class="wrapper">
+            <!--here I'm using a header container to bring in the full size of the window to 960 px. the header width will go to the full width of the window
+            The h1 tag has it's own class to allow it to be inline and remove the margins to take up the specified height and width
+            the ul for top nav is contained to allow for the individual entries to have padding. in the css the link attributes are specified-->
+                <header>
+                        <div class="header_container">
+                            <h1 class="heading_teal_back">Bryan Villalon</h1>
+                            <div class=topnav>
+                                <ul>
+                                    <li><a href="index.html">About Me</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                </header>
+
+            <!--entire content is contained to make a reference to place items. the h2 tag has its own class to allow for control the rest is just forms-->
+            <div class="container">
+                <h2 class="heading_teal_text">Contact</h2>
+                <!--using post to add content to an email-->
+                <form action="mailto:bavillalon@gmail.com" method="post" enctype="text/plain">
+                    Name:<br>
+                    <input type="text" name="name"><br>
+                    E-mail:<br>
+                    <input type="text" name="mail"><br>
+                    Comment:<br>
+                    <textarea name="comments"></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="push"> </div>
+        </div>
+<!-- sticky footer to stay at the bottom of content or window whichever is last-->
+        <footer>
+            <div class="stick_foot">
+                Copyright &copy;
+            </div>
+        </footer>
+
+    </body>
+</html>

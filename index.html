@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bryan Villalon</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    </head>
+
+    <!--top of the body has a wrapper used to make the whole height 100% for the sticky footer-->
+    <body>
+        <div class="wrapper">
+            <header>
+                <!--here I'm using a header container to bring in the full size of the window to 960 px. the header width will go to the full width of the window
+                The h1 tag has it's own class to allow it to be inline and remove the margins to take up the specified height and width
+            the ul for top nav is contained to allow for the individual entries to have padding. in the css the link attributes are specified-->
+                <div class="header_container">
+                    <h1 class="heading_teal_back">Bryan Villalon</h1>
+                    <div class=topnav>
+                        <ul>
+                            <li><a href="index.html">About Me</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!--entire content is contained to make a reference to place items. the h2 tag has its own class to allow for control the rest is just about me-->
+            <div class="container">
+                <h2 class="heading_teal_text">About Me</h2>
+                <img src="assets/images/BryanV_picture.jpg.jpg" alt="Picture of Bryan Villalon">
+                <p>  Hi! My name is Bryan Villalon and welcome to my page! </p>
+
+                <p>
+                    I was born in McAllen, Texas but moved here early in life so I consider myself a Houston native.
+                    I was homeschooled from 6th through 12th grades but attended college at the University of Houston.
+                    In December of 2010, I graduated with a BS in Electrical Engineering with a minor in Nano Engineering.
+                </p>
+
+                <p>
+                    After briefly flirting with graduate school for silicon processes and VLSI, I began work with Hewlett Packard Enterprise in April 2011 working primarilly on networking cards and switches.
+                    Pretty much every networking card that HPE has released in that time frame was either designed by or collaborated on by me.
+                    I also did some signal integrity on some of the BladeSystem and Synergy switches and worked on EMC (Electromagnetic Compatibility) for all of the projects I was responsible for.
+                </p>
+
+                <p> After some time in the corporate world I felt like I needed a break so I quit in April 2019 to begin working with my family's land managment company, TexPLM.
+                    My responsibilities include basic IT work, maintaining our website and email, and designing and maintaining databases for our county records.
+                    I am also learning GIS to help identify leasing opportunities for us to sell to O&G companies. There is quite a lot to learn!
+                </p>
+                <p>Currently I am taking a course with the University of Texas called Coding Bootcamp and intend on using what I learn to add value to my family's company.
+                </p>
+
+                <p>On February 2nd, 2019 I proposed to the love of my life, Ashley Towne, after having dated a little over 9 months.
+                    I knew I wanted to marry her before I asked her out. I get to marry her on October 19th, 2019 at St. John Vianney Catholic Church.</p>
+
+                <p>
+                    I enjoy <em>many</em> things including but not limited to bowling, golf, cooking, watching the Astros and Texans, watching Houston Cougar sports, and general shennanigans. 
+                    Doing any of these things, you will most certainly see me with an IPA or a glass of rum in either hand.
+                </p>
+            </div>
+
+            <!-- pushing the bottom of the page back up to allow for the sticky footer.-->
+            <div class="push"> </div>
+        </div>
+<!-- sticky footer to stay at the bottom of the content or the bottom of the window, whichever comes last-->
+        <footer>
+            <div class="stick_foot">
+                Copyright &copy;
+            </div>
+        </footer>
+
+    </body>
+</html>
