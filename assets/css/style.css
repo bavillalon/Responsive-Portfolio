@@ -186,9 +186,7 @@ footer{
     }
     .header_container{
         width:768px;
-
-    
-
+    }
 }
 
 
@@ -198,9 +196,7 @@ footer{
     }
     .header_container{
         width:680px;
-
-    
-
+    }
 }
 
 
@@ -225,6 +221,7 @@ footer{
     img{
         float: none;
     }
+}
 
 
   
